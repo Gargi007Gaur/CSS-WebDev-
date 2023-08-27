@@ -1,0 +1,113 @@
+=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          background-color: bisque;
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+      
+        header {
+          background-color: #b84e4e;
+          color: #fff;
+          text-align: center;
+          padding: 1rem 0;
+        }
+      
+        .container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1rem;
+          padding: 2rem;
+        }
+      
+        .service {
+          border: 1px solid #ccc;
+          background-color: aqua;
+          padding: 1rem;
+          text-align: center;
+        }
+      
+        form {
+          background-color: #333;
+          max-width: 400px;
+          margin: 2rem auto;
+          padding: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+      
+        label {
+          color: white;
+          display: block;
+          margin-bottom: 0.5rem;
+        }
+      
+        input[type="text"],
+        input[type="email"],
+        select {
+          width: 100%;
+          padding: 0.5rem;
+          margin-bottom: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+      
+        button {
+          background-color: #333;
+          color: #fff;
+          padding: 0.5rem 1rem;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      
+        button:hover {
+          background-color: #555;
+        }
+      </style>
+      </head>
+<body>
+    <header>
+        <h1>Facial Services</h1>
+        <p>Your skin deserves the best care!</p>
+      </header>
+      
+      <div class="container">
+        <div class="service">
+          <h2>Deep Cleansing Facial</h2>
+          <p>Our deep cleansing facial will leave your skin feeling refreshed and rejuvenated.</p>
+          <p>Price: $50</p>
+        </div>
+        <div class="service">
+          <h2>Anti-Aging Facial</h2>
+          <p>Reverse the signs of aging with our specialized anti-aging facial treatment.</p>
+          <p>Price: $80</p>
+        </div>
+        <div class="service">
+          <h2>Hydrating Facial</h2>
+          <p>Replenish your skin's moisture and achieve a healthy glow with our hydrating facial.</p>
+          <p>Price: $60</p>
+        </div>
+      </div>
+    
+      <form>
+        <h2 style="color: white;">Request an Appointment</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="service">Select a Service:</label>
+        <select id="service" name="service" required>
+          <option value="deep-cleansing">Deep Cleansing Facial</option>
+          <option value="anti-aging">Anti-Aging Facial</option>
+          <option value="hydrating">Hydrating Facial</option>
+        </select>
+        <button type="submit">Request Appointment</button>
+</body>
+</html>
