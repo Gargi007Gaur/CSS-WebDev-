@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Development Course</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>NewAge Skills</h1>
+            <p>Enhance your confidence, communication skills, and leadership abilities.</p>
+        </header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#news">News</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#blog">Blog</a>
+        </nav>
+        <button id="enroll-btn">Enroll Now</button>
+        <div class="course-list">
+            <h2>Course Modules</h2>
+            <ul id="course-modules"></ul>
+        </div>
+    </div>
+    <footer>
+        <p>Contact: contact@newageskills.com | Phone: +91 9876543210</p>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("enroll-btn").addEventListener("click", function() {
+            alert("You have successfully enrolled in the Personality Development course!");
+        });
+        
+        const modules = ["Confidence Building", "Effective Communication", "Leadership Skills", "Public Speaking", "Time Management"];
+        const moduleList = document.getElementById("course-modules");
+        
+        modules.forEach(module => {
+            let li = document.createElement("li");
+            li.textContent = module;
+            moduleList.appendChild(li);
+        });
+    </script>
+</body>
+</html>
